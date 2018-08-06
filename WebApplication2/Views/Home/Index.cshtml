@@ -1,15 +1,41 @@
+<style>
+    .rot {
+        color: red;
+    }
+
+    .gruen {
+        color: green;
+    }
+</style>
+
 <h1>Hallo Welt!</h1>
 
-@{ 
+<!-- Das ist ein HTML-Kommentar -->
+@* Das ist ein Razor Kommentar *@
+
+@{
     int i = 1;
     string s = "Hallo Razor!";
 
+    string a = "kurz";
+    string abc = "lang";
+
     for (int j = 0; j < 10; j++)
     {
-        <text>@j</text>
+        <text>@j test@example.com @@ </text>
     }
+
+    @(a)@:bc
+
+    var className = "rot";
+
+    var isJaChecked = false;
+    var isNeinChecked = true;
 }
 
-<p>@i</p>
+<p class="@className">@i</p>
 
 <p>@s</p>
+
+<input type="radio" name="JaNein" value="Ja" checked="@isJaChecked" />Ja
+<input type="radio" name="JaNein" value="Nein" checked="@isNeinChecked"/>Nein

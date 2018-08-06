@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ASP.NET Core - @ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        &copy; @DateTime.Now.Year
+    </footer>
+    
+    <div>
+        @if (IsSectionDefined("werbung"))
+        {
+            @RenderSection("werbung")
+        }
+        else
+        {
+            <p>Hier erwartet Sie normalerweise Werbung!</p>
+
+        }
+    </div>
+</body>
+</html>
