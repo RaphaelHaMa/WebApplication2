@@ -20,6 +20,8 @@ namespace WebApplication2
                 .Build();
 
             host.Run();
+            
+            var test = "123";
 
             var test = "456";
         }

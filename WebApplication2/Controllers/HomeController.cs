@@ -17,6 +17,14 @@ namespace WebApplication2.Controllers
         // GET /Home/Info
         public IActionResult Info()
         {
+            ViewBag.Name = "Martina Musterfrau";
+
+            return View();
+        }
+
+        // GET /Home/Template
+        public IActionResult Template()
+        {
             return View();
         }
     }
